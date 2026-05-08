@@ -23,7 +23,7 @@ async def list_devices():
 
 
 async def run(threshold: float):
-    if threshold is not None:
+    if threshold is None:
         print(f"[!] Input a threshold")
         return
     
