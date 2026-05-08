@@ -39,7 +39,7 @@ class BLKScanner:
         name = (device.name or "").lower()
         return self.target in name or self.target in device.address.lower()
         
-    async def start(self, ons=None): # for testing will revert back to actually needed
+    async def start(self, ons=None): # for testing will revert back to needing a target
         self._running = True
         self._locked_addr = None
         while self._running:
